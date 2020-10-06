@@ -22,7 +22,7 @@ function SEO({ lang, meta, title }) {
 
   const metaDescription = site.siteMetadata.description
   const url = site.siteMetadata.url
-  const metaImage = site.siteMetadata.image
+  const metaImage = `${site.siteMetadata.url}${site.siteMetadata.image}`
   const siteTitle = title || site.siteMetadata.title
 
   return (
