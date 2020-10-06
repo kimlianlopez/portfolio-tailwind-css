@@ -1,0 +1,100 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display;
+}
+
+p {
+  @apply font-body;
+}
+
+@layer components {
+  /* 
+  Heading Text
+   */
+  .heading-text {
+    @apply text-3xl leading-normal font-bold;
+  }
+
+  @screen sm {
+    .heading-text {
+      @apply text-4xl;
+    }
+  }
+
+  @screen md {
+    .heading-text {
+      @apply text-5xl leading-tight;
+    }
+  }
+
+  @screen lg {
+    .heading-text {
+      @apply text-6xl;
+    }
+  }
+
+  /* 
+  Body Text 
+  */
+  .body-text {
+    @apply text-base;
+  }
+
+  @screen sm {
+    .body-text {
+      @apply text-lg;
+    }
+  }
+
+  @screen lg {
+    .body-text {
+      @apply text-2xl;
+    }
+  }
+
+  .btn {
+    @apply py-2 px-4 rounded font-bold border-2 text-base;
+  }
+
+  @screen sm {
+    .btn {
+      @apply text-lg;
+    }
+  }
+
+  @screen lg {
+    .btn {
+      @apply text-2xl;
+    }
+  }
+
+  .btn:focus {
+    @apply outline-none;
+  }
+
+  .btn-main {
+    @apply text-white bg-teal-500 border-teal-500;
+  }
+
+  .btn-main:hover {
+    @apply bg-teal-600 border-teal-600;
+  }
+
+  .btn-main-outline {
+    @apply text-white bg-transparent border-white;
+  }
+
+  .btn-main-outline:hover {
+    @apply bg-white border-white text-teal-500;
+  }
+}
