@@ -1,5 +1,9 @@
 module.exports = {
   important: true,
+  purge: {
+    enabled: true,
+    content: ["./src/**/*.html", "./src/**/*.js"],
+  },
   theme: {
     fontFamily: {
       display: ["Poppins", "sans-serif"],
